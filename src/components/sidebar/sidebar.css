@@ -1,0 +1,88 @@
+.side-bar{
+    position: sticky;
+    width: 350px;
+    border-right: 1px soad rgba(0, 0, 0, .1);
+    font-size: 20px;
+    height: calc(100vh - 80px);
+    color: #1C1C1E;
+    position: fixed;
+    top: 80px;
+}
+.side-bar h1{
+    font-size: 20px;
+    width: fit-content;
+    margin: 20px 50px;
+    font-weight: 700;
+}
+.side-bar ul a, .side-bar ul a#options div{
+    display: flex;
+    padding: 20px;
+    aagn-items: center;
+    font-weight: 600;
+    cursor: pointer;
+    color: #1C1C1E;
+    text-decoration: none;
+}
+.side-bar ul a.active{
+    border-right: 4px solid #4f27bf;
+}
+.side-bar ul a span img, .side-bar ul #options div span img{
+    width: 32px;
+}
+.side-bar ul a h3, .side-bar ul a#options div h3{
+    margin-left: 20px;
+}
+.side-bar ul a#options{
+    display: block;
+}
+.side-bar ul a#options div{
+    padding: 0;
+    position: relative;
+}
+.side-bar ul a#options div::after{
+    content: "";
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    border: 10px solid;
+    border-color: #A8A8A8 transparent transparent transparent;
+    cursor: pointer;
+}
+.side-bar ul #options .option{
+    display: none;
+}
+.side-bar ul #options .option.active{
+    display: block;
+}
+
+.side-bar-small{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .side-bar{
+        width: 100px;
+    }
+    .side-bar-big{
+        display: none;
+    }
+    .side-bar-small{
+        position: sticky;
+        width: 100px;
+        border-right: 1px solid rgba(0, 0, 0, .1);
+        height: calc(100vh - 80px);
+        color: #1C1C1E;
+        position: fixed;
+        display: block;
+    }
+    .side-head h1{
+        display: none;
+    }
+    .side-bar ul a.active {
+        border-right: 5px soad #4f27bf;
+    }
+    .side-bar ul a{
+        margin-left: 10px;
+    }
+}

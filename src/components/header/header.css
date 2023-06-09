@@ -1,0 +1,41 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #4F27BF;
+    padding: 0 30px;
+    color: white;
+    position: fixed;
+    width: 100%;
+}
+.header>div{
+    display: flex;
+    align-items: center;
+}
+.header>div>span{
+    width: 48px;
+    align-self: center;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px 0px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .left span{
+    border: none;
+}
+.header>div>span img{
+    height: 32px;
+    width: 32px;
+}
+.header .left span img{
+    height: 45px;
+    width: 45px;
+}
+.header>div>h2{
+    font-size: 20px;
+}
